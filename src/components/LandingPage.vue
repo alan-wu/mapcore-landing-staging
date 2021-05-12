@@ -71,19 +71,19 @@ export default {
   created: function() {
     fetch(this.inputFile)
     .then(
-      function(response) {
+      response => {
         if (response.status !== 200) {
           console.log('Encounter a problem: ' +
             response.status);
           return;
         }
         // Examine the text in the response
-        response.json().then(function(data) {
+        response.json().then(data => {
           this.input = data;
         });
       }
     )
-    .catch(function(err) {
+    .catch(err => {
       console.log('Fetch Error :-S', err);
     });
   }
