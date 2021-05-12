@@ -19,14 +19,14 @@
           <div class="text">{{ item.description }}</div>
         </el-col>
         <el-col :span="4">
-          <router-link :to="item.link" exact-path>
+          <a :href="item.link">
             <el-button
               size="mini"
               round
               type="primary"
               icon="el-icon-caret-right"
             ></el-button>
-          </router-link>
+          </a>
         </el-col>
       </el-row>
     </el-main>
