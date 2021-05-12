@@ -1,7 +1,8 @@
 {
-  "name": "@abi-software/maptooltip",
-  "version": "0.1.13",
-  "main": "./dist/maptooltip.common.js",
+  "name": "@abi-software/landingpage",
+  "version": "0.0.1",
+  "main": "./dist/landingpage.common.js",
+  "private": true,
   "files": [
     "dist/*",
     "src/*",
@@ -12,7 +13,7 @@
   "scripts": {
     "serve": "vue-cli-service serve --port 8083",
     "build": "vue-cli-service build --dest test_html --mode static",
-    "build-bundle": "vue-cli-service build --target lib --name maptooltip ./src/components/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name landingpage ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
