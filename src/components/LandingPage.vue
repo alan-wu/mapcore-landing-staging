@@ -19,7 +19,7 @@
           <div class="text">{{ item.description }}</div>
         </el-col>
         <el-col :span="4">
-          <a :href="item.link">
+          <a target="_blank" :href="item.link">
             <el-button
               size="mini"
               round
